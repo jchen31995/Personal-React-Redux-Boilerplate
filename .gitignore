@@ -1,0 +1,18 @@
+# Code Editors / IDEs
+.vscode
+jsconfig.json
+
+# Dependencies
+/node_modules
+
+# Logs
+*.log
+
+# OS Clutter
+.DS_Store
+
+# Config Files
+.env
+
+# Build directory
+/dist
