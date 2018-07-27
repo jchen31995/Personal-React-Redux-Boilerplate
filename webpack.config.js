@@ -5,9 +5,11 @@ const ExtractTextPlugin = require('extract-text-webpack-plugin') // for css file
 module.exports = {
   entry: './src/client/index.js',
   output: {
+    publicPath: '/',
     path: path.join(__dirname, '/dist'),
     filename: '[name].js',
   },
+  mode: 'production',
   module: {
     rules: [
       {
@@ -31,7 +33,7 @@ module.exports = {
   },
   plugins: [
     new HtmlWebpackPlugin({
-      template: './src/index.html'
+      template: './src/client/index.html'
     })
   ],
   optimization: {
