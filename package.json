@@ -1,7 +1,7 @@
 {
   "name": "reactboilerplate",
   "version": "1.0.0",
-  "description": "My BasicReact Boilerplate",
+  "description": "My Basic React Boilerplate - Windows + Mac Compatible",
   "main": "index.js",
   "scripts": {
     "build": "webpack --mode production --config webpack.config.js",

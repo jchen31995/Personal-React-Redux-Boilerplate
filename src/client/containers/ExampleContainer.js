@@ -10,7 +10,7 @@ class ExampleContainer extends Component {
     this.props.exampleAction()
     return (
       <div>
-        Here's an exmpty example container!
+        Here's an empty example container!
       </div>
     )
   }
