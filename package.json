@@ -5,9 +5,9 @@
   "main": "index.js",
   "scripts": {
     "build": "webpack --mode production --config webpack.config.js",
-    "lint": "eslint .; exit 0",
+    "lint": "eslint . || exit 0",
     "start": "cross-env NODE_ENV=development nodemon src/server/server.js",
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "James Chen",
   "license": "MIT",
