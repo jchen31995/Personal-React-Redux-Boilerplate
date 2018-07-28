@@ -1,10 +1,11 @@
+/* eslint-disable no-console */
 const express = require('express')
 const bodyParser = require('body-parser')
 const cors = require('cors')
 
-const webpackConfig = require('../../webpack.config')
 const webpack = require('webpack')
 const webpackDevMiddleware = require('webpack-dev-middleware')
+const webpackConfig = require('../../webpack.config')
 
 const PORT = process.env.PORT || 3000
 
@@ -14,7 +15,7 @@ app.use(bodyParser.json())
 app.use(bodyParser.urlencoded({ extended: true }))
 app.use(cors())
 
-app.get('/', (req,res, next) => {
+app.get('/', (req, res, next) => {
   next()
 })
 
@@ -23,8 +24,8 @@ app.use(webpackDevMiddleware(compiler, {
   publicPath: webpackConfig.output.publicPath,
 }))
 
-app.get('/testRoute', function(req,res){
-  res.status(201).json({success:true})
+app.get('/testRoute', (req, res) => {
+  res.status(201).json({ success: true })
 })
 
 

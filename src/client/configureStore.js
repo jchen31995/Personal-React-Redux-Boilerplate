@@ -1,7 +1,8 @@
-import { createStore, compose, applyMiddleware } from 'redux';
-import rootReducer from './redux/index';
-// import DevTools from '../containers/DevTools';
-import thunk from 'redux-thunk';
+import { createStore, applyMiddleware } from 'redux'
+import thunk from 'redux-thunk'
+// import DevTools from '../containers/DevTools'
+
+import rootReducer from './redux/index'
 
 const initialState = {}
 
@@ -10,5 +11,5 @@ export function configureStore() {
     rootReducer,
     initialState,
     applyMiddleware(thunk),
-  );
+  )
 }
