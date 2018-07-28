@@ -20,6 +20,25 @@ module.exports = {
         ],
       },
       {
+        test: /\.s?css$/,
+        use: ExtractTextPlugin.extract({
+          fallback: {
+            loader: 'style-loader',
+          },
+          use: [
+            {
+              loader: 'css-loader',
+            },
+            {
+              loader: 'sass-loader',
+            },
+            {
+              loader: 'postcss-loader',
+            },
+          ],
+        }),
+      },
+      {
         test: /\.html$/,
         loader: 'html-loader',
       },
@@ -29,12 +48,12 @@ module.exports = {
           loader: 'file-loader',
         },
       },
-    ]
+    ],
   },
   plugins: [
     new HtmlWebpackPlugin({
-      template: './src/client/index.html'
-    })
+      template: './src/client/index.html',
+    }),
   ],
   optimization: {
     splitChunks: {
