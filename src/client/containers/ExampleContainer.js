@@ -12,11 +12,11 @@ import { exampleAction } from '../redux/example_reducer'
 
 // At top of file: //
 import { connect } from 'react-redux'
-import { bindActionCreators } from 'redux' 
+import { bindActionCreators } from 'redux'
 
 // At bottom of file: //
 const mapStateToProps = (state) => ({
-   someProp: state.stateInPropToRetrieve 
+   someProp: state.stateInPropToRetrieve
 })
 
 const mapDispatchToProps = (dispatch) => bindActionCreators({

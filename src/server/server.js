@@ -7,8 +7,7 @@ const webpack = require('webpack')
 const webpackDevMiddleware = require('webpack-dev-middleware')
 const webpackConfig = require('../../webpack.config')
 
-const PORT = process.env.PORT || 3000
-
+const { PROJECT_NAME, PORT } = require('./config')
 
 const app = express()
 app.use(bodyParser.json())
@@ -30,5 +29,5 @@ app.get('/testRoute', (req, res) => {
 
 
 app.listen(PORT, () => {
-  console.log(`This server is now running on http://localhost:${PORT}`)
+  console.log(`${PROJECT_NAME} is now running. Visit http://localhost:${PORT} on your preferred browser.`)
 })
