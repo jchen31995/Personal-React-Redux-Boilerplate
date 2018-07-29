@@ -12,6 +12,10 @@
   },
   "author": "James Chen",
   "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jchen31995/Personal-React-Redux-Boilerplate.git"
+  },
   "dependencies": {
     "babel-core": "^6.26.3",
     "babel-eslint": "^8.2.6",
