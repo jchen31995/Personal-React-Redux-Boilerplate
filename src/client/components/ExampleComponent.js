@@ -1,8 +1,9 @@
 import React from 'react'
 
-const ExampleComponent = () =>
+const ExampleComponent = () => (
   <div>
-    Welcome to my React-Redux Boilerplate v 1.0.0 (Created on July 19, 2018)
+    This is an example component!
   </div>
+)
 
 export default ExampleComponent

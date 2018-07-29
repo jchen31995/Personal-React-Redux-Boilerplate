@@ -6,9 +6,9 @@ import PropTypes from 'prop-types'
 import { exampleAction } from '../redux/example_reducer'
 
 /*
-====================================================================
-  This is how you set up any container component in Redux
-====================================================================
+==================================================================
+  This is how you set up any containers in Redux
+==================================================================
 
 // At top of file: //
 import { connect } from 'react-redux'
@@ -24,7 +24,6 @@ const mapDispatchToProps = (dispatch) => bindActionCreators({
 }, dispatch)
 
 export default connect(mapStateToProps, mapDispatchToProps)(App)
-
 */
 
 class ExampleContainer extends Component {
@@ -32,7 +31,7 @@ class ExampleContainer extends Component {
     this.props.exampleAction()
     return (
       <div>
-        Here's an empty example container!
+        This is an example container!
       </div>
     )
   }
@@ -40,7 +39,7 @@ class ExampleContainer extends Component {
 
 function mapStateToProps(state) {
   return {
-
+    exampleReducer: state.exampleReducer,
   }
 }
 
