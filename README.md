@@ -1,2 +1,2 @@
 # Personal-React-Redux-Boilerplate
-simple React-Redux boilerplate I made from scratch
+simple React-Redux boilerplate I made from scratch (Mac + Windows compatible)
