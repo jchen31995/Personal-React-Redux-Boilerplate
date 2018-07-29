@@ -1,12 +1,10 @@
-
-import reducer from '../../../client/redux/example_reducer'
-import { EXAMPLE_ACTION, exampleAction } from '../../../client/redux/example_reducer'
+import reducer, { EXAMPLE_ACTION, exampleAction } from '../../../client/redux/example_reducer'
 
 describe('Example Reducer Test', () => {
   it('Should initialize state', () => {
     const state = reducer(undefined, {})
     expect(state).toEqual({
-      success: true,
+      exampleReducerState: true,
       message: 'Everything\'s routed correctly! This is the initial state',
     })
   })
