@@ -14,5 +14,6 @@ jsconfig.json
 # Config Files
 .env
 
-# Build directory
+# Build artifacts
 /dist
+/coverage
