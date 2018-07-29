@@ -5,7 +5,7 @@ export function exampleAction() {
 }
 
 const initialState = {
-  success: true,
+  exampleReducerState: true,
   message: 'Everything\'s routed correctly! This is the initial state',
 }
 

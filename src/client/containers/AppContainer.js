@@ -1,15 +1,32 @@
 import React, { Component } from 'react'
-import ExampleComponent from '../components/ExampleComponent'
+import { Switch, Route } from 'react-router-dom'
+import { connect } from 'react-redux'
 
+import ExampleContainer from './ExampleContainer'
+
+import Welcome from '../components/Welcome'
+import ExampleComponent from '../components/ExampleComponent'
+import PageNotFound from '../components/PageNotFound'
+
+
+// eslint here disabled for now, eventually this will grow into a full container
+/* eslint-disable class-methods-use-this */
 class AppContainer extends Component {
   render() {
     return (
-      <div>
-        <h1> React-Redux Boilerplate </h1>
-        <ExampleComponent />
-      </div>
+      <Switch>
+        <Route exact path="/" component={ Welcome } />
+        <Route exact path="/examplecomponent" component={ ExampleComponent } />
+        <Route exact path="/examplecontainer" component={ ExampleContainer } />
+
+        <Route exact path="*" component={ PageNotFound } />
+      </Switch>
     )
   }
 }
 
-export default AppContainer
+function mapStateToProps() {
+  return {}
+}
+
+export default connect(mapStateToProps)(AppContainer)
