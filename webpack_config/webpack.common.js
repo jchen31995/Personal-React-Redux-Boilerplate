@@ -1,6 +1,8 @@
 const path = require('path')
 const HtmlWebpackPlugin = require('html-webpack-plugin')
-const ExtractTextPlugin = require('extract-text-webpack-plugin') // for css files
+const MiniCssExtractPlugin = require('mini-css-extract-plugin') // for css files
+
+const isDev = process.env.NODE_ENV !== 'production'
 
 module.exports = {
   entry: './src/client/index.js',
@@ -20,22 +22,11 @@ module.exports = {
       },
       {
         test: /\.s?css$/,
-        use: ExtractTextPlugin.extract({
-          fallback: {
-            loader: 'style-loader',
-          },
-          use: [
-            {
-              loader: 'css-loader',
-            },
-            {
-              loader: 'sass-loader',
-            },
-            {
-              loader: 'postcss-loader',
-            },
+        use: [
+          isDev ? 'style-loader' : MiniCssExtractPlugin.loader,
+          'css-loader',
+          'sass-loader',
           ],
-        }),
       },
       {
         test: /\.html$/,
@@ -50,6 +41,9 @@ module.exports = {
     ],
   },
   plugins: [
+    new MiniCssExtractPlugin({
+      filename: '[name].css',
+    }),
     new HtmlWebpackPlugin({
       template: './src/client/index.html',
     }),
