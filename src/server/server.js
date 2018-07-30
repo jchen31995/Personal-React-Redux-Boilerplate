@@ -4,13 +4,14 @@ const bodyParser = require('body-parser')
 const cors = require('cors')
 const path = require('path')
 
+const isDev = process.env.NODE_ENV !== 'production'
 const webpack = require('webpack')
 const webpackDevMiddleware = require('webpack-dev-middleware')
-
-const isDev = process.env.NODE_ENV !== 'production'
 const webpackConfig = isDev ? require('../../webpack_config/webpack.dev') : require('../../webpack_config/webpack.prod')
 
 const { PROJECT_NAME, PORT } = require('./config')
+const auth = require('./routes/auth')
+const api = require('./routes/api')
 
 const app = express()
 app.use(bodyParser.json())
@@ -29,6 +30,9 @@ app.use(webpackDevMiddleware(compiler, {
 app.get('/testRoute', (req, res) => {
   res.status(201).json({ success: true })
 })
+
+app.use(auth)
+app.use(api)
 
 app.get('*', (req, res) => {
   res.sendFile(path.resolve(__dirname, '..', 'client', 'index.html'))
