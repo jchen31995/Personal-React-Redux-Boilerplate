@@ -6,10 +6,9 @@ module.exports = {
   entry: './src/client/index.js',
   output: {
     publicPath: '/',
-    path: path.join(__dirname, '/dist'),
+    path: path.join(__dirname, '..', '/dist'),
     filename: '[name].js',
   },
-  mode: 'production',
   module: {
     rules: [
       {
