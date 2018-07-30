@@ -1,4 +1,5 @@
 const express = require('express')
+
 const router = express.Router()
 
 /*
@@ -20,4 +21,4 @@ router.delete('/logout', (req, res) => {
   res.send('DELETE request to clear session & logout')
 })
 
-module.exports = router;
+module.exports = router
