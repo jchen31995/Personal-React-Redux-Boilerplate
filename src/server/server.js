@@ -6,7 +6,9 @@ const path = require('path')
 
 const webpack = require('webpack')
 const webpackDevMiddleware = require('webpack-dev-middleware')
-const webpackConfig = require('../../webpack.config')
+
+const isDev = process.env.NODE_ENV !== 'production'
+const webpackConfig = isDev ? require('../../webpack_config/webpack.dev') : require('../../webpack_config/webpack.prod')
 
 const { PROJECT_NAME, PORT } = require('./config')
 
