@@ -26,7 +26,7 @@ module.exports = {
           isDev ? 'style-loader' : MiniCssExtractPlugin.loader,
           'css-loader',
           'sass-loader',
-          ],
+        ],
       },
       {
         test: /\.html$/,
