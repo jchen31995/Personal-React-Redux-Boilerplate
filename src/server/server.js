@@ -2,7 +2,6 @@
 const express = require('express')
 const bodyParser = require('body-parser')
 const cors = require('cors')
-const path = require('path')
 
 const isDev = process.env.NODE_ENV !== 'production'
 const webpack = require('webpack')
@@ -16,7 +15,8 @@ const api = require('./routes/api')
 
 const devMiddleware = require('./middlewares/development')
 const prodMiddleware = require('./middlewares/production')
-const setUpEnvRoutes = isDev ?  devMiddleware : prodMiddleware
+
+const setUpEnvRoutes = isDev ? devMiddleware : prodMiddleware
 
 const app = express()
 app.use(bodyParser.json())
