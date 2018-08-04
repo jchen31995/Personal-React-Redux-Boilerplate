@@ -13,6 +13,11 @@ const { PROJECT_NAME, PORT } = require('./config')
 const auth = require('./routes/auth')
 const api = require('./routes/api')
 
+
+const devMiddleware = require('./middlewares/development')
+const prodMiddleware = require('./middlewares/production')
+const setUpEnvRoutes = isDev ?  devMiddleware : prodMiddleware
+
 const app = express()
 app.use(bodyParser.json())
 app.use(bodyParser.urlencoded({ extended: true }))
@@ -34,9 +39,7 @@ app.get('/testRoute', (req, res) => {
 app.use(auth)
 app.use(api)
 
-app.get('*', (req, res) => {
-  res.sendFile(path.resolve(__dirname, '..', 'client', 'index.html'))
-})
+app.use(setUpEnvRoutes)
 
 app.listen(PORT, () => {
   console.log(`${PROJECT_NAME} is now running. Visit http://localhost:${PORT} on your preferred browser.`)
