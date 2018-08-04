@@ -1,4 +1,5 @@
 const path = require('path')
+const webpack = require('webpack')
 
 const DotEnvWebpackPlugin = require('dotenv-webpack')
 const HtmlWebpackPlugin = require('html-webpack-plugin')
@@ -45,14 +46,18 @@ module.exports = {
     ],
   },
   plugins: [
+    new DotEnvWebpackPlugin(),
+    new HtmlWebpackPlugin({
+      template: './src/client/index.html',
+    }),
     new MiniCssExtractPlugin({
       filename: '[name].css',
       chunkFilename: '[id].css',
     }),
-    new HtmlWebpackPlugin({
-      template: './src/client/index.html',
+    new webpack.DefinePlugin({
+      NODE_ENV: JSON.stringify(process.env.NODE_ENV),
     }),
-    new DotEnvWebpackPlugin(),
+
   ],
   optimization: {
     minimizer: [

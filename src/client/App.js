@@ -2,7 +2,7 @@ import React from 'react'
 import { Provider } from 'react-redux'
 import { IntlProvider } from 'react-intl'
 
-import configureStore from './configureStore'
+import configureStore from './store/configureStore'
 import { locale, translatedMessages } from './localization/index'
 import flattenMessages from './localization/utils'
 import Router from './router'
