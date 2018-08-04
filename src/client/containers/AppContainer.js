@@ -8,7 +8,6 @@ import Welcome from '../components/Welcome'
 import ExampleComponent from '../components/ExampleComponent'
 import PageNotFound from '../components/PageNotFound'
 
-
 // eslint here disabled for now, eventually this will grow into a full container
 /* eslint-disable class-methods-use-this */
 class AppContainer extends Component {

@@ -5,6 +5,10 @@ import PropTypes from 'prop-types'
 
 import { exampleAction } from '../redux/example_reducer'
 
+import { translatedMessages } from '../localization/index'
+
+const { greetings } = translatedMessages.exampleContainer
+
 /*
 ==================================================================
   This is how you set up any containers in Redux
@@ -31,7 +35,7 @@ class ExampleContainer extends Component {
     this.props.exampleAction()
     return (
       <div>
-        This is an example container!
+        { greetings } This is an example container!
       </div>
     )
   }

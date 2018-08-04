@@ -1,14 +1,19 @@
 import React from 'react'
 import { Provider } from 'react-redux'
-import configureStore from './configureStore'
+import { IntlProvider } from 'react-intl'
 
+import configureStore from './configureStore'
+import { locale, translatedMessages } from './localization/index'
+import flattenMessages from './localization/utils'
 import Router from './router'
 
 const store = configureStore()
 
 const App = () => (
   <Provider store={ store }>
-    <Router/>
+    <IntlProvider locale={locale} messages={flattenMessages(translatedMessages)}>
+      <Router/>
+    </IntlProvider>
   </Provider>
 )
 

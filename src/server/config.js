@@ -2,7 +2,7 @@ const dotEnvSafe = require('dotenv-safe')
 const path = require('path')
 
 dotEnvSafe.config({
-  allowEmptyValues: false,
+  allowEmptyValues: true,
   path: path.resolve(__dirname, '..', '../', '.env'),
   example: path.resolve(__dirname, '..', '..', '.env-example'),
 })
