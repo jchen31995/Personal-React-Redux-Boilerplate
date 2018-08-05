@@ -3,9 +3,9 @@ import { connect } from 'react-redux'
 import { bindActionCreators } from 'redux'
 import PropTypes from 'prop-types'
 
-import { exampleAction } from '../redux/example_reducer'
-
-import { translatedMessages } from '../localization/index'
+import './ExampleContainer.scss'
+import { exampleAction } from '../../redux/example_reducer'
+import { translatedMessages } from '../../localization/index'
 
 const { greetings } = translatedMessages.exampleContainer
 
