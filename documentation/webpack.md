@@ -11,4 +11,4 @@ So what do we do? Webpack to the rescue!
 Webpack is an asset bundle that takes all these small modules/files and outputs them in a single file (commonly called `bundle.js`) in a way that preserves load order. Often, this is achieved by storing all our code into an array as functions and calling the different functions in the array as needed. In the app, this output file is called in the root `index.html` as a script.
 
 ## Configuring Webpack
-The webpack config file is split up into 3 files: `webpack.common.js`, `webpack.dev.js`, and `webpack.prod.js`. It's pretty self explanatory which files correspond to which environment. Right now, there's not too much different between the `development` and `production` environment, but you can customize it to our needs!
+The webpack config file is split up into 3 files: `webpack.common.js`, `webpack.dev.js`, and `webpack.prod.js`. It's pretty self explanatory which files correspond to which environment. Right now, there's not too much different between the `development` and `production` environment, but you can customize it to your needs!
