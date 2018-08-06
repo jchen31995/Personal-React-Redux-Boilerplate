@@ -43,6 +43,8 @@ src
 ```
 This scales much better because every feature/component is organized and easy to find. However, one drawback to this approach is that some actions or files may be used across different components and may not be specific to any one component. Eventually, you may have to created some sort of `shared` or `general` folder.
 
+TLDR: This approach is great and scales wells
+
 ## Ducks approach
 This is a project structure where it marries the function-first and feature-first approach. It follows something like this:
 ```
@@ -62,6 +64,8 @@ src
 │   ├── index.js
 ...
 ```
-The TLDR of the Ducks approach is to have the related `action creators`, `actions`, and `reducer` in one file as a `module`. In this project, we put all this and the root reducer in one folder (Some projects call this the `duck` or `modules` folder, but I like to just call it `redux`). For the most part, this approach keeps everything related together in one place.
+The Ducks approach aims to collect the related `action creators`, `actions`, and `reducer` into one file as a `module`. In this project, we put all this and the root reducer in one folder (Some projects call this the `duck` or `modules` folder, but I like to just call it `redux`). For the most part, this approach keeps everything related together in one place.
 
-In the end, the Ducks approach came intuitively to me and I liked it. So quack quack. But what's most important is to find something that works for your app!
+TLDR: The Ducks approach came intuitively to me and I liked it. So quack quack. 
+
+But what's most important is to find something that works for your app. So feel free to adapt and the change the app structure to fit your needs!
