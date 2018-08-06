@@ -1,6 +1,6 @@
 # Structuring the React project
 
-Deciding how I wanted to structure my React app was quite fun. I had a hard time figuring out what project structure I wanted to use for this boilerplate, because there are a lot of different ways to do it. Here are some of the common ones that I found in my research:
+Deciding how I wanted to structure my React app was quite fun. I had a hard time figuring out what project structure I wanted to use for this boilerplate, because there are a lot of different ways to do it. Here are some of the common ones that I found:
 
 ## Function-first
 This is a project structure where everything is separated by its app function. It follows something like this:
