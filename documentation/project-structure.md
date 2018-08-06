@@ -1,2 +1,2 @@
 # Project Structure
-It'll be up in a little bti!
+It'll be up in a little bit!
