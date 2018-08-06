@@ -13,7 +13,8 @@ You should be up and running! Unless otherwise specified in your .env file, the 
 These notes are as much for you to get a better understanding of how this project is supposed to be used as it for my to explain my design choices and why I configured the project the way I did. I guess it also provides some useful links for additional reading (because don't we all love that?)
 - [The Tech Stack](https://github.com/jchen31995/Personal-React-Redux-Boilerplate/tree/master/documentation/techstack.md)
 - [Commands](https://github.com/jchen31995/Personal-React-Redux-Boilerplate/tree/master/documentation/commands.md)
-- [React Structure Explanation](https://github.com/jchen31995/Personal-React-Redux-Boilerplate/tree/master/documentation/react-structure.md)
+- [Project Structure](https://github.com/jchen31995/Personal-React-Redux-Boilerplate/tree/master/documentation/project-structure.md)
+- [React Structure](https://github.com/jchen31995/Personal-React-Redux-Boilerplate/tree/master/documentation/react-structure.md)
 - [Webpack Configurations](https://github.com/jchen31995/Personal-React-Redux-Boilerplate/tree/master/documentation/webpack.md)
  
 ## Questions or Suggestions?
