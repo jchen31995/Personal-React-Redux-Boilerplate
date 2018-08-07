@@ -13,6 +13,9 @@ npm run dev:client
 Builds only the front end of your app if you need a quick look around your app without the server. 
 > Note: Some pages that require the server will not work in this configuration.
 
+### Redux Dev Tools
+To hide/toggle, `ctrl + h` and to rotate it along the screen, `ctrl + w`
+
 ## Production
 ```Shell
 npm start || npm run start
