@@ -1,5 +1,5 @@
 # Exploring The Tech Stack
-This is a quick look at some of the technologies used to build this boilerplate! Nothing particularly fancy right now, but who knows? That might change soon!
+This is a quick look at some of the technologies used to build thisa boilerplate! Nothing particularly fancy right now, but who knows? That might change soon!
 
 
 ## Core
@@ -20,4 +20,4 @@ This is a quick look at some of the technologies used to build this boilerplate!
 ## Additional Features
 - [DotEnvConfig]()
 - [React-intl (localization)](https://github.com/yahoo/react-intl): `react-intl` is a part of the [FormatJS library](https://formatjs.io)
-- [Redux-Devtools](https://github.com/reduxjs/redux-devtools/tree/fc1ab01ca16303005b8bd66b60bce085bf1542e5)
+- [Redux-Devtools](https://github.com/reduxjs/redux-devtools/tree/fc1ab01ca16303005b8bd66b60bce085bf1542e5): click [here](https://github.com/reduxjs/redux-devtools/blob/master/docs/Walkthrough.md) for the integration walkthrough
