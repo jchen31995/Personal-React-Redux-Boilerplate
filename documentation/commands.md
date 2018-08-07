@@ -3,7 +3,7 @@ This is a quick rundown on what scripts are available in your `package.json`.
 
 ## Development
 ```Shell
-npm run dev
+$ npm run dev
 ```
 Builds the `development` setup of your app and runs it at `http://localhost:3000` unless otherwise specified in `.env` file.
 
@@ -23,7 +23,7 @@ $ npm start || npm run start
 Builds the `production` version of your app and runs it locally.
 
 ```Shell
-npm run build
+$ npm run build
 ```
 Processes your codebase and optimizes it for production. It minimizes all files and splits the app into two files: `main.js` which contains the main codebase and `vendor.js` which contains the node module files. For each file, a source map is constructed. All files are outputted to `/dist`.
 
