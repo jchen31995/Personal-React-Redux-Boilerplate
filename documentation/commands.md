@@ -14,7 +14,7 @@ Builds only the front end of your app if you need a quick look around your app w
 > Note: Some pages that require the server will not work in this configuration.
 
 ```Shell
-npm run dev:server
+$ npm run dev:server
 ```
 Builds the server.
 
