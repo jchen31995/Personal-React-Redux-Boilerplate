@@ -21,6 +21,3 @@ This is a tour of the boilerplate and where you can expect to find certain thing
 `src/server/routes`: To avoid a cluttered `server.js` file, organize your routes here and access them via `app.use` in the root server file.
 
 >`src/server/db`: This directory doesn't exist, but I recommend adding it to store anything related to your database. Create extra folders for things like schemas, migrations, and seeders as needed. 
-
-
-
