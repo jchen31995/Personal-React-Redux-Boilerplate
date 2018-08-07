@@ -1,4 +1,4 @@
-# Exploring the tech Stack
+# Exploring The Tech Stack
 This is a quick look at some of the technologies used to build this boilerplate! Nothing particularly fancy right now, but who knows? That might change soon!
 
 
