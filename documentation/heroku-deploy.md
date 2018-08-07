@@ -3,7 +3,7 @@ This app is Heroku-friendly and deploying a production app is super simple. I'll
 
 ```
 $ heroku login
-$ heroku create -a name-of-your-app
+$ heroku create -a app-name
 $ git push heroku master
 ```
 
@@ -24,5 +24,5 @@ $ heroku open
 
 ## Heroku Resources
 - [Heroku's Dev Center](https://devcenter.heroku.com/articles/troubleshooting-node-deploys)
-- [Heroku's official guide to getting started](https://devcenter.heroku.com/articles/getting-started-with-nodejs)
-- [Heroku's Node.js deploy troubleshooting](https://devcenter.heroku.com/articles/troubleshooting-node-deploys)
+- [Heroku's Official Guide To Getting Started](https://devcenter.heroku.com/articles/getting-started-with-nodejs)
+- [Heroku's Node.js Deploy Troubleshooting](https://devcenter.heroku.com/articles/troubleshooting-node-deploys)
