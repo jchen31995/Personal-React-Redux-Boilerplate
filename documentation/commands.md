@@ -13,6 +13,11 @@ npm run dev:client
 Builds only the front end of your app if you need a quick look around your app without the server. 
 > Note: Some pages that require the server will not work in this configuration.
 
+```Shell
+npm run dev:server
+```
+Builds the server.
+
 ## Production
 ```Shell
 npm start || npm run start
