@@ -16,6 +16,6 @@ These notes are as much for you to get a better understanding of how this projec
 - [Project Structure](https://github.com/jchen31995/Personal-React-Redux-Boilerplate/tree/master/documentation/project-structure.md)
 - [React Structure](https://github.com/jchen31995/Personal-React-Redux-Boilerplate/tree/master/documentation/react-structure.md)
 - [Webpack Configurations](https://github.com/jchen31995/Personal-React-Redux-Boilerplate/tree/master/documentation/webpack.md)
- 
+ - [Deploying To Heroku](https://github.com/jchen31995/Personal-React-Redux-Boilerplate/tree/master/documentation/heroku-deploy.md)
 ## Questions or Suggestions?
 Feel free to drop a line to my inbox about any suggestions or questions you may have about this project!

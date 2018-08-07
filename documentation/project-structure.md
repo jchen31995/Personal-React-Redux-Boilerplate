@@ -1,4 +1,4 @@
-# Project Structure
+# Structuring the Project
 This is a tour of the boilerplate and where you can expect to find certain things. I highlight some of the places you should be familiar with and know exist.
 
  

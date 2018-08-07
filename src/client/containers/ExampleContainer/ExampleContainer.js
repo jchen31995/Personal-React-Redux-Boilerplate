@@ -34,7 +34,7 @@ class ExampleContainer extends Component {
   render() {
     this.props.exampleAction()
     return (
-      <div>
+      <div id="example-greeting">
         { greetings } This is an example container!
       </div>
     )
