@@ -1,8 +1,8 @@
-# Structuring the React project
+# Structuring The React Project
 
 Deciding how I wanted to structure my React app was quite fun. I had a hard time figuring out what project structure I wanted to use for this boilerplate, because there are a lot of different ways to do it. Here are some of the common ones that I found:
 
-## Function-first
+## By Function
 This is a project structure where everything is separated by its app function. It follows something like this:
 ```
 src
@@ -19,11 +19,11 @@ src
 ├── reducers
 ...
 ```
-For a smaller app, this approach works fine, and it's very clear where everything is. The problem is when your app becomes more and more complex and you add more and more files. Eventually, it comes to the point where to revise one component or container, you end up having to touch every directory. And this problem is only exacerbated when your component grows bigger and is made up of several subcomponents. 
+For a smaller app, this approach works fine, and it's very clear where everything is. The problem is when your app becomes more and more complex and you add more and more files. Eventually, it comes to the point where to revise one component or container, you end up having to touch every directory. And this problem is only exacerbated when your component grows bigger and is made up of several subcomponents.
 
 TLDR: This approach gets clunky.
 
-## Feature-first
+## By Feature
 This is a project structure where everything is separated by the feature. It follows something like this:
 ```
 src
@@ -45,7 +45,7 @@ This scales much better because every feature/component is organized and easy to
 
 TLDR: This approach is great and scales wells
 
-## Ducks approach
+## Ducks Approach
 This is a project structure where it marries the function-first and feature-first approach. It follows something like this:
 ```
 src
@@ -66,6 +66,6 @@ src
 ```
 The Ducks approach aims to collect the related `action creators`, `actions`, and `reducer` into one file as a `module`. In this project, we put all this and the root reducer in one folder (Some projects call this the `duck` or `modules` folder, but I like to just call it `redux`). For the most part, this approach keeps everything related together in one place.
 
-TLDR: The Ducks approach came intuitively to me and I liked it. So quack quack. 
+TLDR: The Ducks approach came intuitively to me and I liked it. So quack quack.
 
-But what's most important is to find something that works for your app. So feel free to adapt and the change the app structure to fit your needs!
+In the end, what's most important is to find something that works for your app. So feel free to adapt and the change the app structure to fit your needs!

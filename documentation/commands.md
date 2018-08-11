@@ -1,5 +1,5 @@
 # Learning the Commands
-This is a quick rundown on what scripts are available in your `package.json`. 
+This is a quick rundown on what scripts are available for the project.
 
 ## Development
 ```Shell
@@ -10,7 +10,7 @@ Builds the `development` setup of your app and runs it at `http://localhost:3000
 ```Shell
 npm run dev:client
 ```
-Builds only the front end of your app if you need a quick look around your app without the server. 
+Builds only the front end of your app if you need a quick look around your app without the server.
 > Note: Some pages that require the server will not work in this configuration.
 
 ## Production

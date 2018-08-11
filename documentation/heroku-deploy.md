@@ -10,7 +10,7 @@ $ git push heroku master
 One final step before your app is fully up and running is that you'll need to [add your environmental variables to the Heroku environment](https://devcenter.heroku.com/articles/config-vars). You can also do this through the dashboard. If you've hardcoded the app or set defaults in your config file, you can skip this step.
 
 ```
-Setting a variable
+Setting a variable via terminal
 $ heroku config:set ENV_VARIABLE=value
 
 Removing a variable

@@ -42,5 +42,5 @@ app.use(api)
 app.use(setUpEnvRoutes)
 
 app.listen(PORT, () => {
-  console.log(`${PROJECT_NAME} is now running. Visit http://localhost:${PORT} on your preferred browser.`)
+  console.log(`${PROJECT_NAME} is now listening on PORT ${PORT}. Visit http://localhost:${PORT}!`)
 })
