@@ -11,8 +11,8 @@ export default function configureStore() {
     rootReducer,
     initialState,
     compose(
+      applyMiddleware(thunk),
       DevTools.instrument(),
     ),
-    applyMiddleware(thunk),
   )
 }
