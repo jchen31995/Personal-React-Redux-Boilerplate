@@ -1,5 +1,5 @@
-const dotEnvSafe = require('dotenv-safe')
-const path = require('path')
+import dotEnvSafe from 'dotenv-safe'
+import path from 'path'
 
 dotEnvSafe.config({
   allowEmptyValues: true,
@@ -10,7 +10,7 @@ dotEnvSafe.config({
 const { PROJECT_NAME } = process.env
 const PORT = process.env.PORT || 3000
 
-module.exports = {
+export {
   PORT,
   PROJECT_NAME,
 }

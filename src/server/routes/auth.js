@@ -1,4 +1,4 @@
-const express = require('express')
+import express from 'express'
 
 const router = express.Router()
 
@@ -21,4 +21,4 @@ router.delete('/logout', (req, res) => {
   res.send('DELETE request to clear session & logout')
 })
 
-module.exports = router
+export default router

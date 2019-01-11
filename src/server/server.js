@@ -1,20 +1,18 @@
 /* eslint-disable no-console */
-const express = require('express')
-const bodyParser = require('body-parser')
-const cors = require('cors')
+import express from 'express'
+import bodyParser from 'body-parser'
+import cors from 'cors'
+import webpack from 'webpack'
+import webpackDevMiddleware from 'webpack-dev-middleware'
+
+import { PROJECT_NAME, PORT } from './config'
+import devMiddleware from './middlewares/development'
+import prodMiddleware from './middlewares/production'
+import api from './routes/api'
+import auth from './routes/auth'
 
 const isDev = process.env.NODE_ENV !== 'production'
-const webpack = require('webpack')
-const webpackDevMiddleware = require('webpack-dev-middleware')
 const webpackConfig = isDev ? require('../../webpack_config/webpack.dev') : require('../../webpack_config/webpack.prod')
-
-const { PROJECT_NAME, PORT } = require('./config')
-const auth = require('./routes/auth')
-const api = require('./routes/api')
-
-
-const devMiddleware = require('./middlewares/development')
-const prodMiddleware = require('./middlewares/production')
 
 const setUpEnvRoutes = isDev ? devMiddleware : prodMiddleware
 
