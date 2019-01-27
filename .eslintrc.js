@@ -30,7 +30,8 @@ module.exports = {
       "jsx-a11y",
       "react"
     ],
-    "rules": {
+    "root": true,
+    "rules": { // [0, 1, 2] => [Off, Warning, Error]
       "react/jsx-uses-vars": [2],
       "jsx-quotes": ["error", "prefer-double"],
       "semi": ["error", "never"]
