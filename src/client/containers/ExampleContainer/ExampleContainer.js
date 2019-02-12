@@ -4,7 +4,7 @@ import { bindActionCreators } from 'redux'
 import PropTypes from 'prop-types'
 
 import './ExampleContainer.scss'
-import { exampleAction } from '../../redux/example_reducer'
+import { exampleActionCreatorWithThunk } from '../../redux/example_reducer'
 import { translatedMessages } from '../../localization/index'
 
 const { greetings } = translatedMessages.exampleContainer
@@ -32,7 +32,9 @@ export default connect(mapStateToProps, mapDispatchToProps)(App)
 
 class ExampleContainer extends Component {
   render() {
-    this.props.exampleAction()
+    const { exampleActionCreatorWithThunkExample } = this.props
+    exampleActionCreatorWithThunkExample()
+
     return (
       <div id="example-greeting">
         { greetings } This is an example container!
@@ -49,12 +51,12 @@ function mapStateToProps(state) {
 
 function mapDispatchToState(dispatch) {
   return bindActionCreators({
-    exampleAction,
+    exampleActionCreatorWithThunkExample: exampleActionCreatorWithThunk,
   }, dispatch)
 }
 
 ExampleContainer.propTypes = {
-  exampleAction: PropTypes.func,
+  exampleActionCreatorWithThunkExample: PropTypes.func,
 }
 
 export default connect(mapStateToProps, mapDispatchToState)(ExampleContainer)

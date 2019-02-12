@@ -1,4 +1,4 @@
-import reducer, { EXAMPLE_ACTION, exampleAction } from '../../../client/redux/example_reducer'
+import reducer, { EXAMPLE_ACTION, actionCreator } from '../../../client/redux/example_reducer'
 
 describe('Example Reducer Test', () => {
   it('Should initialize state', () => {
@@ -10,7 +10,7 @@ describe('Example Reducer Test', () => {
   })
 
   it('Should create an action with type + payload', () => {
-    const action = exampleAction()
+    const action = actionCreator()
     expect(action.type).toEqual(EXAMPLE_ACTION)
     expect(action.payload).toEqual('This is an example payload')
   })

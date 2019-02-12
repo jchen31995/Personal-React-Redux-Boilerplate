@@ -10,7 +10,7 @@ const UglifyJsPlugin = require('uglifyjs-webpack-plugin')
 const isDev = process.env.NODE_ENV !== 'production'
 
 module.exports = {
-  entry: './src/client/index.js',
+  entry: ['babel-polyfill', './src/client/index.js'],
   output: {
     publicPath: '/',
     path: path.join(__dirname, '..', '/dist'),

@@ -1,7 +1,13 @@
 export const EXAMPLE_ACTION = 'EXAMPLE_ACTION'
 
-export function exampleAction() {
+export function actionCreator() {
   return { type: EXAMPLE_ACTION, payload: 'This is an example payload' }
+}
+export function exampleActionCreatorWithThunk() {
+  return async (dispatch, getState) => {
+    console.log('Redux store: ', getState())
+    dispatch(actionCreator())
+  }
 }
 
 const initialState = {
